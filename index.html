@@ -1,0 +1,84 @@
+<!DOCtype html>
+<html lang="en">
+ <head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- Firebase Reference -->
+  <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
+
+  <!-- Moment.js Reference -->
+  <!-- <script src="http://momentjs.com/downloads/moment.js"></script>   -->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+   <title>Train Time</title>
+ </head>
+
+ <body>
+     <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="display-4">Train Schedule</h1> 
+            
+        </div>
+    <div class="row">
+        <div class="articles">
+            <div class=“parameters”>
+                <h5> Current Train Schedule</h5>
+            </div>
+            <table class="table table-hover" id="table">
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+ <br>
+   <div class="row">
+        <div class="parameters">
+            <h5>Add Train</h5>
+        </div>
+        <form>
+            <div class="form-group">
+                <label for="employee-name-input">Train Name</label>
+                <input type="text" class="form-control" id="name"  placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="role-input">Destination</label>
+                <input type="text" class="form-control" id="role" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="start-input">First Train Time</label>
+                <input type="text" class="form-control" id="startdate" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="rate-input">Frequency</label>
+                <input type="text" class="form-control" id="rate" placeholder="">
+            </div>
+
+            <button type="submit" id="add-employee-btn" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
